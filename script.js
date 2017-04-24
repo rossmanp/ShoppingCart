@@ -7,6 +7,6 @@
     var opt = document.createElement('option');
 	printPrices[i] = prices[i].toFixed(2);
     opt.innerHTML = items[i] + ": $" + printPrices[i];
-    opt.value = prices[i];
+    opt.value = i;
     sel.append(opt);
 }
