@@ -4,4 +4,11 @@ var sum = 0;
 	sum += prices[i];	
 }	
 var writeSum = sum.toFixed(2);
-document.write("<br> The total price of the items is: " + writeSum + ".");
+document.write("<br> The total price of the items is: $" + writeSum + ".");
+
+function GetSelectedItem(el)
+{
+    var e = document.getElementById(el);
+    var strSel = "and text is: " + e.options[e.selectedIndex].text;
+    alert(strSel);
+}
