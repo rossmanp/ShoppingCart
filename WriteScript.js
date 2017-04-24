@@ -27,6 +27,7 @@ function checkout(food){
 }
 
 function resetCart(){
-	alert("You have just emptied your cart.")
+	confirm("Do you want to empty your cart?");
+	alert("You have just emptied your cart.");
 	cartArray = [0 , 0, 0, 0];
 }
